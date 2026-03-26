@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" width="200" height="160">
+  <!-- Empty state: no customers -->
+  <!-- Person silhouette (simple) -->
+  <circle cx="100" cy="48" r="16" fill="none" stroke="#C8D2E0" stroke-width="1.5"/>
+  <path d="M72 96 Q72 72 100 72 Q128 72 128 96" fill="none" stroke="#C8D2E0" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Small plus badge -->
+  <circle cx="124" cy="44" r="10" fill="#F8F9FC" stroke="#1B6B93" stroke-width="1.5" opacity="0.5"/>
+  <line x1="124" y1="39" x2="124" y2="49" stroke="#1B6B93" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  <line x1="119" y1="44" x2="129" y2="44" stroke="#1B6B93" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  <!-- Wave -->
+  <path d="M40 120 Q60 112 80 118 Q100 124 120 118 Q140 112 160 120" stroke="#1B6B93" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.25"/>
+</svg>
