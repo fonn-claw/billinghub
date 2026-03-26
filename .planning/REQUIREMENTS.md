@@ -149,13 +149,90 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| (Populated during roadmap creation) | | |
+| AUTH-01 | Phase 1 | Pending |
+| AUTH-02 | Phase 1 | Pending |
+| AUTH-03 | Phase 1 | Pending |
+| AUTH-04 | Phase 1 | Pending |
+| AUTH-05 | Phase 1 | Pending |
+| AUTH-06 | Phase 1 | Pending |
+| AUTH-07 | Phase 1 | Pending |
+| AUTH-08 | Phase 1 | Pending |
+| CUST-01 | Phase 2 | Pending |
+| CUST-02 | Phase 2 | Pending |
+| CUST-03 | Phase 2 | Pending |
+| CUST-04 | Phase 2 | Pending |
+| CUST-05 | Phase 2 | Pending |
+| CUST-06 | Phase 2 | Pending |
+| INV-01 | Phase 2 | Pending |
+| INV-02 | Phase 2 | Pending |
+| INV-03 | Phase 2 | Pending |
+| INV-04 | Phase 2 | Pending |
+| INV-05 | Phase 2 | Pending |
+| INV-06 | Phase 2 | Pending |
+| INV-07 | Phase 2 | Pending |
+| INV-08 | Phase 2 | Pending |
+| INV-09 | Phase 2 | Pending |
+| REC-01 | Phase 2 | Pending |
+| REC-02 | Phase 2 | Pending |
+| REC-03 | Phase 2 | Pending |
+| PAY-01 | Phase 2 | Pending |
+| PAY-02 | Phase 2 | Pending |
+| PAY-03 | Phase 2 | Pending |
+| PAY-04 | Phase 2 | Pending |
+| PAY-05 | Phase 2 | Pending |
+| COLL-01 | Phase 2 | Pending |
+| COLL-02 | Phase 2 | Pending |
+| COLL-03 | Phase 2 | Pending |
+| COLL-04 | Phase 2 | Pending |
+| COLL-05 | Phase 2 | Pending |
+| DASH-01 | Phase 3 | Pending |
+| DASH-02 | Phase 3 | Pending |
+| DASH-03 | Phase 3 | Pending |
+| DASH-04 | Phase 3 | Pending |
+| DASH-05 | Phase 3 | Pending |
+| DASH-06 | Phase 3 | Pending |
+| DASH-07 | Phase 3 | Pending |
+| DASH-08 | Phase 3 | Pending |
+| DASH-09 | Phase 3 | Pending |
+| DASH-10 | Phase 3 | Pending |
+| RPT-01 | Phase 3 | Pending |
+| RPT-02 | Phase 3 | Pending |
+| RPT-03 | Phase 3 | Pending |
+| RPT-04 | Phase 3 | Pending |
+| RPT-05 | Phase 3 | Pending |
+| PDF-01 | Phase 4 | Pending |
+| PDF-02 | Phase 4 | Pending |
+| PDF-03 | Phase 4 | Pending |
+| PORT-01 | Phase 4 | Pending |
+| PORT-02 | Phase 4 | Pending |
+| PORT-03 | Phase 4 | Pending |
+| PORT-04 | Phase 4 | Pending |
+| PORT-05 | Phase 4 | Pending |
+| UI-01 | Phase 1 | Pending |
+| UI-02 | Phase 1 | Pending |
+| UI-03 | Phase 1 | Pending |
+| UI-04 | Phase 4 | Pending |
+| UI-05 | Phase 4 | Pending |
+| UI-06 | Phase 4 | Pending |
+| UI-07 | Phase 4 | Pending |
+| UI-08 | Phase 4 | Pending |
+| UI-09 | Phase 1 | Pending |
+| UI-10 | Phase 1 | Pending |
+| UI-11 | Phase 1 | Pending |
+| UI-12 | Phase 1 | Pending |
+| SEED-01 | Phase 1 | Pending |
+| SEED-02 | Phase 1 | Pending |
+| SEED-03 | Phase 1 | Pending |
+| SEED-04 | Phase 1 | Pending |
+| SEED-05 | Phase 1 | Pending |
+| SEED-06 | Phase 1 | Pending |
+| SEED-07 | Phase 1 | Pending |
 
 **Coverage:**
 - v1 requirements: 61 total
-- Mapped to phases: 0
-- Unmapped: 61
+- Mapped to phases: 61
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-26*
-*Last updated: 2026-03-26 after initial definition*
+*Last updated: 2026-03-26 after roadmap creation*
