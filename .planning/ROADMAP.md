@@ -29,12 +29,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Role enforcement works at the middleware level -- manually navigating to admin URLs as a customer returns forbidden
   4. The application shell displays the correct color palette, typography, logo, and wave pattern from DESIGN-SPEC.md
   5. Seed script populates 25 customers, 150+ invoices with realistic aging distribution, 3 demo accounts, and mixed revenue types
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
-- [ ] 01-03: TBD
+- [ ] 01-01-PLAN.md — Project setup, design tokens, Drizzle schema, iron-session auth with middleware
+- [ ] 01-02-PLAN.md — Application shell layouts (sidebar, top-bar, breadcrumbs) and styled login page
+- [ ] 01-03-PLAN.md — Comprehensive seed script (25 customers, 150+ invoices, aging distribution)
 
 ### Phase 2: Billing Engine
 **Goal**: Staff can manage customers, create multi-revenue invoices, record payments, set up recurring billing, and work collections
