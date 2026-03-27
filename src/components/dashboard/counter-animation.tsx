@@ -76,6 +76,7 @@ export type AnimatedNumberProps = {
   prefix?: string;
   suffix?: string;
   className?: string;
+  style?: React.CSSProperties;
   format?: "currency" | "percentage" | "number";
 };
 
@@ -84,6 +85,7 @@ export function AnimatedNumber({
   prefix,
   suffix,
   className,
+  style,
   format = "number",
 }: AnimatedNumberProps) {
   const animated = useCountUp(value);
@@ -108,7 +110,7 @@ export function AnimatedNumber({
   }
 
   return (
-    <span className={className}>
+    <span className={className} style={style}>
       {defaultPrefix}
       {display}
       {defaultSuffix}
