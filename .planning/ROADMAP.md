@@ -32,7 +32,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 3 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Project setup, design tokens, Drizzle schema, iron-session auth with middleware
+- [x] 01-01-PLAN.md — Project setup, design tokens, Drizzle schema, iron-session auth with middleware
 - [ ] 01-02-PLAN.md — Application shell layouts (sidebar, top-bar, breadcrumbs) and styled login page
 - [ ] 01-03-PLAN.md — Comprehensive seed script (25 customers, 150+ invoices, aging distribution)
 
@@ -90,7 +90,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Auth | 0/3 | Not started | - |
+| 1. Foundation & Auth | 1/3 | In progress | - |
 | 2. Billing Engine | 0/3 | Not started | - |
 | 3. Dashboard & Reports | 0/2 | Not started | - |
 | 4. Portal, PDFs & Polish | 0/2 | Not started | - |

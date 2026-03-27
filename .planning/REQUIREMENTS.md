@@ -7,14 +7,14 @@
 
 ### Authentication & Authorization
 
-- [ ] **AUTH-01**: User can log in with email and password
-- [ ] **AUTH-02**: User session persists across browser refresh
-- [ ] **AUTH-03**: User can log out from any page
+- [x] **AUTH-01**: User can log in with email and password
+- [x] **AUTH-02**: User session persists across browser refresh
+- [x] **AUTH-03**: User can log out from any page
 - [ ] **AUTH-04**: Manager role has full access to all features and reports
 - [ ] **AUTH-05**: Billing clerk role can manage invoices, payments, and customers but not settings
 - [ ] **AUTH-06**: Customer role can only view own invoices and account information
-- [ ] **AUTH-07**: Unauthenticated users are redirected to login page
-- [ ] **AUTH-08**: Role enforcement at route/middleware level, not just UI hiding
+- [x] **AUTH-07**: Unauthenticated users are redirected to login page
+- [x] **AUTH-08**: Role enforcement at route/middleware level, not just UI hiding
 
 ### Customer Accounts
 
@@ -96,9 +96,9 @@
 
 ### Design System
 
-- [ ] **UI-01**: App follows DESIGN-SPEC.md color palette (Deep Navy, Ocean Teal, Harbor Gold)
-- [ ] **UI-02**: Typography uses DM Serif Display for headings, Inter for body per type scale
-- [ ] **UI-03**: Components styled per DESIGN-SPEC.md (cards, buttons, inputs, tables, badges, sidebar)
+- [x] **UI-01**: App follows DESIGN-SPEC.md color palette (Deep Navy, Ocean Teal, Harbor Gold)
+- [x] **UI-02**: Typography uses DM Serif Display for headings, Inter for body per type scale
+- [x] **UI-03**: Components styled per DESIGN-SPEC.md (cards, buttons, inputs, tables, badges, sidebar)
 - [ ] **UI-04**: Dark mode with proper color mapping per DESIGN-SPEC.md
 - [ ] **UI-05**: Page transitions with fade-in slide-up animation
 - [ ] **UI-06**: Micro-interactions on cards, buttons, sidebar items, table rows per spec
@@ -113,7 +113,7 @@
 
 - [ ] **SEED-01**: Seed script creates "Sunset Harbor Marina" with 25 customer accounts
 - [ ] **SEED-02**: Seed creates 150+ historical invoices going back 6 months with realistic distribution (60% paid on time, 20% paid late, 15% overdue, 5% in collections)
-- [ ] **SEED-03**: Seed creates 3 demo login accounts (manager, billing clerk, customer)
+- [x] **SEED-03**: Seed creates 3 demo login accounts (manager, billing clerk, customer)
 - [ ] **SEED-04**: Seed includes fuel charges, maintenance charges, amenity fees mixed across invoices
 - [ ] **SEED-05**: Seed creates 3 customers with payment plans (partial payments)
 - [ ] **SEED-06**: Seed creates recurring monthly invoices for 15 long-term slip holders
