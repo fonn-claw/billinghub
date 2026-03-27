@@ -39,17 +39,17 @@
 
 ### Recurring Invoices
 
-- [ ] **REC-01**: User can create recurring invoice template with line items, customer, and schedule (monthly/quarterly/annual)
-- [ ] **REC-02**: User can generate invoices from recurring templates
-- [ ] **REC-03**: User can view and manage recurring templates
+- [x] **REC-01**: User can create recurring invoice template with line items, customer, and schedule (monthly/quarterly/annual)
+- [x] **REC-02**: User can generate invoices from recurring templates
+- [x] **REC-03**: User can view and manage recurring templates
 
 ### Payments
 
-- [ ] **PAY-01**: User can record payment against an invoice (cash, check, credit card, bank transfer)
-- [ ] **PAY-02**: User can record partial payments (payment plans)
-- [ ] **PAY-03**: Payment history shows per invoice and per customer
-- [ ] **PAY-04**: User can view list of all payments with filtering
-- [ ] **PAY-05**: Invoice balance updates automatically when payment is recorded
+- [x] **PAY-01**: User can record payment against an invoice (cash, check, credit card, bank transfer)
+- [x] **PAY-02**: User can record partial payments (payment plans)
+- [x] **PAY-03**: Payment history shows per invoice and per customer
+- [x] **PAY-04**: User can view list of all payments with filtering
+- [x] **PAY-05**: Invoice balance updates automatically when payment is recorded
 
 ### Collections
 
@@ -172,14 +172,14 @@
 | INV-07 | Phase 2 | Complete |
 | INV-08 | Phase 2 | Complete |
 | INV-09 | Phase 2 | Complete |
-| REC-01 | Phase 2 | Pending |
-| REC-02 | Phase 2 | Pending |
-| REC-03 | Phase 2 | Pending |
-| PAY-01 | Phase 2 | Pending |
-| PAY-02 | Phase 2 | Pending |
-| PAY-03 | Phase 2 | Pending |
-| PAY-04 | Phase 2 | Pending |
-| PAY-05 | Phase 2 | Pending |
+| REC-01 | Phase 2 | Complete |
+| REC-02 | Phase 2 | Complete |
+| REC-03 | Phase 2 | Complete |
+| PAY-01 | Phase 2 | Complete |
+| PAY-02 | Phase 2 | Complete |
+| PAY-03 | Phase 2 | Complete |
+| PAY-04 | Phase 2 | Complete |
+| PAY-05 | Phase 2 | Complete |
 | COLL-01 | Phase 2 | Complete |
 | COLL-02 | Phase 2 | Pending |
 | COLL-03 | Phase 2 | Pending |

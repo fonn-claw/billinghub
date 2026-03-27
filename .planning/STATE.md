@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 02-03-PLAN.md
-last_updated: "2026-03-27T00:54:14.169Z"
+stopped_at: Completed 02-04-PLAN.md
+last_updated: "2026-03-27T01:01:55.732Z"
 progress:
   total_phases: 4
   completed_phases: 1
   total_plans: 8
-  completed_plans: 5
+  completed_plans: 7
 ---
 
 # Project State
@@ -24,7 +24,7 @@ See: .planning/PROJECT.md (updated 2026-03-26)
 ## Current Position
 
 Phase: 02 (billing-engine) — EXECUTING
-Plan: 3 of 5
+Plan: 4 of 5
 
 ## Performance Metrics
 
@@ -51,6 +51,7 @@ Plan: 3 of 5
 | Phase 02 P01 | 3min | 2 tasks | 15 files |
 | Phase 02 P02 | 13min | 2 tasks | 10 files |
 | Phase 02 P03 | 11min | 2 tasks | 10 files |
+| Phase 02 P04 | 4min | 2 tasks | 13 files |
 
 ## Accumulated Context
 
@@ -74,6 +75,9 @@ Recent decisions affecting current work:
 - [Phase 02]: Complex form data serialized as JSON in FormData for useActionState compatibility
 - [Phase 02]: base-ui render prop used instead of asChild for polymorphic triggers (Dialog, DropdownMenu)
 - [Phase 02]: DAL pattern: src/lib/dal/<entity>.ts for data access with SQL aggregation
+- [Phase 02]: computeInvoiceStatus return cast to enum type for Drizzle update compatibility
+- [Phase 02]: Recurring invoice generation uses fixed 8.5% tax rate and 30-day due date offset
+- [Phase 02]: Bulk generate iterates sequentially to avoid invoice number collisions
 
 ### Pending Todos
 
@@ -86,6 +90,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-27T00:54:37Z
-Stopped at: Completed 02-02-PLAN.md
+Last session: 2026-03-27T01:01:03Z
+Stopped at: Completed 02-04-PLAN.md
 Resume file: None
