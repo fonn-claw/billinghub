@@ -1,5 +1,6 @@
 "use client";
 
+import type { ReactNode } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Table,
@@ -19,6 +20,8 @@ export interface ReportColumn {
   align?: "left" | "right";
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   format?: (value: any) => string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  render?: (value: any, row: Record<string, unknown>) => ReactNode;
 }
 
 interface ReportTableProps {
@@ -112,7 +115,11 @@ export function ReportTable({
                       key={col.key}
                       className={col.align === "right" ? "text-right" : ""}
                     >
-                      {col.format ? col.format(row[col.key]) : String(row[col.key] ?? "")}
+                      {col.render
+                        ? col.render(row[col.key], row)
+                        : col.format
+                          ? col.format(row[col.key])
+                          : String(row[col.key] ?? "")}
                     </TableCell>
                   ))}
                 </TableRow>
