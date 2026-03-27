@@ -82,17 +82,17 @@
 
 ### PDF Generation
 
-- [ ] **PDF-01**: User can download invoice as PDF with marina branding per DESIGN-SPEC.md
+- [x] **PDF-01**: User can download invoice as PDF with marina branding per DESIGN-SPEC.md
 - [ ] **PDF-02**: User can generate monthly/quarterly account statement PDF per customer
-- [ ] **PDF-03**: PDF includes wave pattern footer decoration and proper styling
+- [x] **PDF-03**: PDF includes wave pattern footer decoration and proper styling
 
 ### Customer Portal
 
-- [ ] **PORT-01**: Customer can view their account summary (balance, next due date, last payment)
-- [ ] **PORT-02**: Customer can view their invoice history
-- [ ] **PORT-03**: Customer can download invoice PDFs
-- [ ] **PORT-04**: Portal shows simplified navigation (top bar, no sidebar)
-- [ ] **PORT-05**: "Pay Now" button displayed as coming soon (disabled with tooltip)
+- [x] **PORT-01**: Customer can view their account summary (balance, next due date, last payment)
+- [x] **PORT-02**: Customer can view their invoice history
+- [x] **PORT-03**: Customer can download invoice PDFs
+- [x] **PORT-04**: Portal shows simplified navigation (top bar, no sidebar)
+- [x] **PORT-05**: "Pay Now" button displayed as coming soon (disabled with tooltip)
 
 ### Design System
 
@@ -200,14 +200,14 @@
 | RPT-03 | Phase 3 | Complete |
 | RPT-04 | Phase 3 | Complete |
 | RPT-05 | Phase 3 | Complete |
-| PDF-01 | Phase 4 | Pending |
+| PDF-01 | Phase 4 | Complete |
 | PDF-02 | Phase 4 | Pending |
-| PDF-03 | Phase 4 | Pending |
-| PORT-01 | Phase 4 | Pending |
-| PORT-02 | Phase 4 | Pending |
-| PORT-03 | Phase 4 | Pending |
-| PORT-04 | Phase 4 | Pending |
-| PORT-05 | Phase 4 | Pending |
+| PDF-03 | Phase 4 | Complete |
+| PORT-01 | Phase 4 | Complete |
+| PORT-02 | Phase 4 | Complete |
+| PORT-03 | Phase 4 | Complete |
+| PORT-04 | Phase 4 | Complete |
+| PORT-05 | Phase 4 | Complete |
 | UI-01 | Phase 1 | Pending |
 | UI-02 | Phase 1 | Pending |
 | UI-03 | Phase 1 | Pending |

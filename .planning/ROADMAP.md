@@ -96,4 +96,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | 1. Foundation & Auth | 3/3 | Complete | 2026-03-27 |
 | 2. Billing Engine | 2/5 | In Progress|  |
 | 3. Dashboard & Reports | 3/3 | Complete   | 2026-03-27 |
-| 4. Portal, PDFs & Polish | 0/2 | Not started | - |
+| 4. Portal, PDFs & Polish | 1/2 | In Progress|  |

@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Phase 4 context gathered
-last_updated: "2026-03-27T05:07:07.649Z"
+stopped_at: Completed 04-01-PLAN.md
+last_updated: "2026-03-27T05:28:18.095Z"
 progress:
   total_phases: 4
   completed_phases: 3
-  total_plans: 11
-  completed_plans: 11
+  total_plans: 13
+  completed_plans: 12
 ---
 
 # Project State
@@ -19,12 +19,12 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-26)
 
 **Core value:** Marina operators can create unified invoices combining multiple revenue streams and track collections with aging visibility
-**Current focus:** Phase 03 — dashboard-reports
+**Current focus:** Phase 04 — portal-pdfs-polish
 
 ## Current Position
 
-Phase: 03 (dashboard-reports) — COMPLETE
-Plan: 3 of 3 (all complete)
+Phase: 04 (portal-pdfs-polish) — EXECUTING
+Plan: 2 of 2
 
 ## Performance Metrics
 
@@ -56,6 +56,7 @@ Plan: 3 of 3 (all complete)
 | Phase 03 P01 | 7min | 2 tasks | 5 files |
 | Phase 03 P02 | 3min | 3 tasks | 9 files |
 | Phase 03 P03 | 5min | 2 tasks | 8 files |
+| Phase 04 P01 | 4min | 2 tasks | 12 files |
 
 ## Accumulated Context
 
@@ -90,6 +91,9 @@ Recent decisions affecting current work:
 - [Phase 03]: All Recharts charts share CustomTooltip with configurable formatValue callback
 - [Phase 03]: ReportTable has format (CSV text) + render (JSX badges/colors) separation for columns
 - [Phase 03]: Date range filtering via URL searchParams for server component re-fetch
+- [Phase 04]: Used text fallback for BillingHub in PDF header (react-pdf Image needs absolute URL)
+- [Phase 04]: Portal security: notFound() for unauthorized invoice access via customerId check
+- [Phase 04]: PDF fonts registered via side-effect import pattern; wave pattern uses react-pdf SVG primitives
 
 ### Pending Todos
 
@@ -102,6 +106,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-27T05:07:07.643Z
-Stopped at: Phase 4 context gathered
-Resume file: .planning/phases/04-portal-pdfs-polish/04-CONTEXT.md
+Last session: 2026-03-27T05:28:18.092Z
+Stopped at: Completed 04-01-PLAN.md
+Resume file: None
