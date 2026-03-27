@@ -22,11 +22,13 @@ Marina operators can create unified invoices combining multiple revenue streams 
 - [x] Revenue dashboard with KPIs, aging chart, revenue breakdown, collection trends — Validated in Phase 3: Dashboard & Reports
 - [x] Reports: revenue by category, aging, collections, monthly comparison, CSV export — Validated in Phase 3: Dashboard & Reports
 
+- [x] Customer self-service portal for viewing invoices and statements — Validated in Phase 4: Portal, PDFs & Polish
+- [x] PDF generation for invoices and account statements — Validated in Phase 4: Portal, PDFs & Polish
+- [x] Design system per DESIGN-SPEC.md: nautical theme, dark mode, animations — Validated in Phase 4: Portal, PDFs & Polish
+
 ### Active
 
-- [ ] Customer self-service portal for viewing invoices and statements
-- [ ] PDF generation for invoices and account statements
-- [ ] Design system per DESIGN-SPEC.md: nautical theme, dark mode, animations
+(All v1 requirements validated)
 
 ### Out of Scope
 
@@ -67,4 +69,4 @@ Marina operators can create unified invoices combining multiple revenue streams 
 | Session-based auth over JWT | Simpler for demo, server-side control | — Pending |
 
 ---
-*Last updated: 2026-03-27 after Phase 3 completion*
+*Last updated: 2026-03-27 after Phase 4 completion — ALL PHASES COMPLETE*
