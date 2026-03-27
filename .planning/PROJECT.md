@@ -12,21 +12,20 @@ Marina operators can create unified invoices combining multiple revenue streams 
 
 ### Validated
 
-(None yet — ship to validate)
+- [x] Role-based auth: manager, billing_clerk, customer — Validated in Phase 1: Foundation & Auth
+- [x] Demo data: 25 customers, 150+ invoices, realistic aging distribution — Validated in Phase 1: Foundation & Auth
+- [x] Multi-revenue invoicing combining slip rental, fuel, maintenance, amenities, services — Validated in Phase 2: Billing Engine
+- [x] Recurring invoice templates and auto-generation — Validated in Phase 2: Billing Engine
+- [x] Payment tracking with partial payment and payment plan support — Validated in Phase 2: Billing Engine
+- [x] Collections workflow with aging buckets (30/60/90+), flags, notes — Validated in Phase 2: Billing Engine
+- [x] Customer accounts with profiles, vessels, slip assignments, balance summaries — Validated in Phase 2: Billing Engine
+- [x] Revenue dashboard with KPIs, aging chart, revenue breakdown, collection trends — Validated in Phase 3: Dashboard & Reports
+- [x] Reports: revenue by category, aging, collections, monthly comparison, CSV export — Validated in Phase 3: Dashboard & Reports
 
 ### Active
 
-- [ ] Revenue dashboard with KPIs, aging chart, revenue breakdown, collection trends
-- [ ] Multi-revenue invoicing combining slip rental, fuel, maintenance, amenities, services
-- [ ] Recurring invoice templates and auto-generation
-- [ ] Payment tracking with partial payment and payment plan support
-- [ ] Collections workflow with aging buckets (30/60/90+), flags, notes
-- [ ] Customer accounts with profiles, vessels, slip assignments, balance summaries
 - [ ] Customer self-service portal for viewing invoices and statements
 - [ ] PDF generation for invoices and account statements
-- [ ] Reports: revenue by category, aging, collections, monthly comparison, CSV export
-- [ ] Role-based auth: manager, billing_clerk, customer
-- [ ] Demo data: 25 customers, 150+ invoices, realistic aging distribution
 - [ ] Design system per DESIGN-SPEC.md: nautical theme, dark mode, animations
 
 ### Out of Scope
@@ -68,4 +67,4 @@ Marina operators can create unified invoices combining multiple revenue streams 
 | Session-based auth over JWT | Simpler for demo, server-side control | — Pending |
 
 ---
-*Last updated: 2026-03-26 after initialization*
+*Last updated: 2026-03-27 after Phase 3 completion*
