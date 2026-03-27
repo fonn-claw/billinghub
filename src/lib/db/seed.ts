@@ -422,6 +422,7 @@ async function seed() {
         newDueDate.getTime() + Math.random() * (now.getTime() - newDueDate.getTime())
       );
       await db.insert(collectionNotes).values({
+        customerId: inv.customerId,
         invoiceId: inv.id,
         note: pick(COLLECTION_NOTE_TEXTS),
         createdBy: managerUser.id,
