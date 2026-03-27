@@ -209,35 +209,34 @@ export async function getCollectionsReport(
           AND p.payment_date >= ${startDate}::date
           AND p.payment_date <= ${endDate}::date
       ), 0)::bigint AS collected_cents,
-      COALESCE((
-        SELECT SUM(i.total_cents) - COALESCE((
+      (
+        COALESCE((
+          SELECT SUM(i.total_cents)
+          FROM invoices i
+          WHERE i.customer_id = c.id
+            AND i.status NOT IN ('draft', 'paid')
+        ), 0) -
+        COALESCE((
           SELECT SUM(p2.amount_cents)
           FROM payments p2
-          WHERE p2.invoice_id = i.id
+          JOIN invoices i2 ON i2.id = p2.invoice_id
+          WHERE i2.customer_id = c.id
+            AND i2.status NOT IN ('draft', 'paid')
         ), 0)
-        FROM invoices i
-        WHERE i.customer_id = c.id
-          AND i.status NOT IN ('draft', 'paid')
-      ), 0)::bigint AS outstanding_cents
+      )::bigint AS outstanding_cents
     FROM customers c
-    HAVING COALESCE((
-      SELECT SUM(p.amount_cents)
-      FROM payments p
+    WHERE EXISTS (
+      SELECT 1 FROM payments p
       JOIN invoices i ON i.id = p.invoice_id
       WHERE i.customer_id = c.id
         AND p.payment_date >= ${startDate}::date
         AND p.payment_date <= ${endDate}::date
-    ), 0) > 0
-    OR COALESCE((
-      SELECT SUM(i.total_cents) - COALESCE((
-        SELECT SUM(p2.amount_cents)
-        FROM payments p2
-        WHERE p2.invoice_id = i.id
-      ), 0)
-      FROM invoices i
+    )
+    OR EXISTS (
+      SELECT 1 FROM invoices i
       WHERE i.customer_id = c.id
         AND i.status NOT IN ('draft', 'paid')
-    ), 0) > 0
+    )
     ORDER BY outstanding_cents DESC
   `);
 

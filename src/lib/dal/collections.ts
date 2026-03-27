@@ -49,31 +49,31 @@ export async function getCollections(): Promise<CollectionRow[]> {
         select sum(i.total_cents) - coalesce((
           select sum(p.amount_cents) from payments p
           join invoices i2 on i2.id = p.invoice_id
-          where i2.customer_id = ${customers.id}
+          where i2.customer_id = customers.id
             and i2.due_date < current_date
             and i2.status not in ('draft', 'paid')
         ), 0)
         from invoices i
-        where i.customer_id = ${customers.id}
+        where i.customer_id = customers.id
           and i.due_date < current_date
           and i.status not in ('draft', 'paid')
       ), 0)`.as("total_overdue_cents"),
       maxDaysOverdue: sql<number>`coalesce((
         select max(current_date - i.due_date::date)
         from invoices i
-        where i.customer_id = ${customers.id}
+        where i.customer_id = customers.id
           and i.due_date < current_date
           and i.status not in ('draft', 'paid')
       ), 0)`.as("max_days_overdue"),
       lastNoteDate: sql<Date | null>`(
         select max(cn.created_at)
         from collection_notes cn
-        where cn.customer_id = ${customers.id}
+        where cn.customer_id = customers.id
       )`.as("last_note_date"),
       lastNotePreview: sql<string | null>`(
         select left(cn.note, 80)
         from collection_notes cn
-        where cn.customer_id = ${customers.id}
+        where cn.customer_id = customers.id
         order by cn.created_at desc
         limit 1
       )`.as("last_note_preview"),
@@ -104,19 +104,19 @@ export async function getOverdueCustomers(): Promise<OverdueCustomerRow[]> {
         select sum(i.total_cents) - coalesce((
           select sum(p.amount_cents) from payments p
           join invoices i2 on i2.id = p.invoice_id
-          where i2.customer_id = ${customers.id}
+          where i2.customer_id = customers.id
             and i2.due_date < current_date
             and i2.status not in ('draft', 'paid')
         ), 0)
         from invoices i
-        where i.customer_id = ${customers.id}
+        where i.customer_id = customers.id
           and i.due_date < current_date
           and i.status not in ('draft', 'paid')
       ), 0)`.as("total_overdue_cents"),
       maxDaysOverdue: sql<number>`coalesce((
         select max(current_date - i.due_date::date)
         from invoices i
-        where i.customer_id = ${customers.id}
+        where i.customer_id = customers.id
           and i.due_date < current_date
           and i.status not in ('draft', 'paid')
       ), 0)`.as("max_days_overdue"),

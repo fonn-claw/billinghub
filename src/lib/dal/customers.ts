@@ -31,12 +31,12 @@ export async function getCustomers(search?: string, dock?: string) {
       outstandingBalance: sql<number>`
         coalesce((
           select sum(i.total_cents) from invoices i
-          where i.customer_id = ${customers.id} and i.status != 'draft'
+          where i.customer_id = customers.id and i.status != 'draft'
         ), 0) -
         coalesce((
           select sum(p.amount_cents) from payments p
           join invoices i on i.id = p.invoice_id
-          where i.customer_id = ${customers.id}
+          where i.customer_id = customers.id
         ), 0)
       `.as("outstanding_balance"),
     })
