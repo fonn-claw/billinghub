@@ -64,11 +64,12 @@ Plans:
   2. Dashboard shows accounts receivable aging as a horizontal bar chart, revenue breakdown as a donut chart, and collection trends as an area chart
   3. Dashboard shows outstanding balance alerts identifying who owes the most and who is most overdue
   4. User can run revenue-by-category, aging, collections, and monthly comparison reports and export any report to CSV
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 03-01: TBD
-- [ ] 03-02: TBD
+- [ ] 03-01-PLAN.md — Install Recharts, dashboard DAL, reports DAL, counter animation hook, CSV export utility
+- [ ] 03-02-PLAN.md — Dashboard KPI cards, aging/donut/trend charts, outstanding balance alerts
+- [ ] 03-03-PLAN.md — Reports page with 4 report types, date range filtering, and CSV export
 
 ### Phase 4: Portal, PDFs & Polish
 **Goal**: Customers can self-serve their account via a portal, invoices and statements are downloadable as branded PDFs, and the app is visually showcase-ready
@@ -94,5 +95,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 |-------|----------------|--------|-----------|
 | 1. Foundation & Auth | 3/3 | Complete | 2026-03-27 |
 | 2. Billing Engine | 2/5 | In Progress|  |
-| 3. Dashboard & Reports | 0/2 | Not started | - |
+| 3. Dashboard & Reports | 0/3 | Not started | - |
 | 4. Portal, PDFs & Polish | 0/2 | Not started | - |
