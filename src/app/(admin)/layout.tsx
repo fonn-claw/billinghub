@@ -18,7 +18,7 @@ export default async function AdminLayout({
     <div className="flex min-h-screen bg-background">
       <Sidebar />
       <main className="flex-1 overflow-x-hidden">
-        <div className="mx-auto max-w-[1400px] p-8">
+        <div className="mx-auto max-w-[1400px] p-8 page-transition">
           <Breadcrumbs />
           {children}
         </div>

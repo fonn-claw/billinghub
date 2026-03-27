@@ -102,7 +102,7 @@ function NavContent({
             key={item.href}
             href={item.href}
             onClick={onNavClick}
-            className={`flex items-center gap-3 rounded-r-lg px-3 py-2.5 text-sm font-medium transition-colors duration-150 ${
+            className={`sidebar-slide-hover flex items-center gap-3 rounded-r-lg px-3 py-2.5 text-sm font-medium transition-colors duration-150 ${
               isActive(item.href)
                 ? "border-l-[3px] border-l-[#E8AA42] bg-[rgba(27,107,147,0.25)] text-white"
                 : "border-l-[3px] border-l-transparent text-[#A8C4D8] hover:bg-[#0F3A5C]"

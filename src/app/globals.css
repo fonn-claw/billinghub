@@ -178,3 +178,96 @@
 .bg-btn-gradient {
   background: linear-gradient(135deg, #1B6B93 0%, #0C2D48 100%);
 }
+
+/* Page transition */
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-transition {
+  animation: page-enter 200ms ease-out;
+}
+
+/* Card hover micro-interaction */
+.card-hover {
+  transition: transform 200ms ease-out, box-shadow 200ms ease-out;
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(12, 45, 72, 0.10);
+}
+.dark .card-hover:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.30);
+}
+
+/* Button press micro-interaction */
+.btn-press:active {
+  transform: translateY(1px);
+  filter: brightness(0.95);
+  transition: transform 100ms, filter 100ms;
+}
+
+/* Table row hover */
+.table-row-hover {
+  transition: background-color 100ms;
+}
+.table-row-hover:hover {
+  background-color: var(--muted);
+}
+
+/* Badge appear animation */
+@keyframes badge-appear {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+.badge-animate {
+  animation: badge-appear 150ms ease-out;
+}
+
+/* Sidebar item hover - background slides in from left */
+.sidebar-slide-hover {
+  position: relative;
+  overflow: hidden;
+}
+.sidebar-slide-hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--sidebar-accent);
+  transform: translateX(-100%);
+  transition: transform 150ms ease-out;
+  z-index: 0;
+  border-radius: inherit;
+}
+.sidebar-slide-hover:hover::before {
+  transform: translateX(0);
+}
+.sidebar-slide-hover > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Dark mode badge adjustments - 12% opacity backgrounds */
+.dark [data-badge="paid"] { background: rgba(34, 180, 126, 0.12) !important; color: #22B47E !important; }
+.dark [data-badge="overdue"] { background: rgba(232, 93, 106, 0.12) !important; color: #E85D6A !important; }
+.dark [data-badge="partial"] { background: rgba(232, 170, 66, 0.12) !important; color: #E8AA42 !important; }
+.dark [data-badge="sent"] { background: rgba(58, 156, 199, 0.12) !important; color: #3A9CC7 !important; }
+.dark [data-badge="draft"] { background: rgba(136, 150, 168, 0.12) !important; color: #8896A8 !important; }
+.dark [data-badge="collections"] { background: rgba(232, 93, 106, 0.12) !important; color: #E85D6A !important; }
+
+/* Dark mode dashboard header overlay */
+.dark .dashboard-header-overlay {
+  background: rgba(10, 22, 40, 0.90) !important;
+}
+
+/* Skeleton pulse colors */
+.dark .skeleton-pulse {
+  background-color: #1C2E42;
+}

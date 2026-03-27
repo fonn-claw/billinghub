@@ -16,7 +16,7 @@ export default async function PortalLayout({
   return (
     <div className="min-h-screen bg-background">
       <TopBar />
-      <main className="mx-auto max-w-[1200px] p-8">
+      <main className="mx-auto max-w-[1200px] p-8 page-transition">
         {children}
       </main>
     </div>
