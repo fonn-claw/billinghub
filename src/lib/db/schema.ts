@@ -28,6 +28,16 @@ export const customers = pgTable("customers", {
   vesselType: text("vessel_type"),
   vesselLength: integer("vessel_length"),
   notes: text("notes"),
+  isCollectionsFlagged: boolean("is_collections_flagged").default(false).notNull(),
+  lastReminderDate: date("last_reminder_date"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
+export const customerNotes = pgTable("customer_notes", {
+  id: uuid("id").defaultRandom().primaryKey(),
+  customerId: uuid("customer_id").references(() => customers.id, { onDelete: "cascade" }).notNull(),
+  note: text("note").notNull(),
+  createdBy: uuid("created_by").references(() => users.id),
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 
@@ -70,8 +80,12 @@ export const payments = pgTable("payments", {
 
 export const collectionNotes = pgTable("collection_notes", {
   id: uuid("id").defaultRandom().primaryKey(),
-  invoiceId: uuid("invoice_id").references(() => invoices.id).notNull(),
+  customerId: uuid("customer_id").references(() => customers.id).notNull(),
+  invoiceId: uuid("invoice_id").references(() => invoices.id),
+  noteType: text("note_type").default("note").notNull(),
   note: text("note").notNull(),
+  promisedDate: date("promised_date"),
+  promisedAmountCents: integer("promised_amount_cents"),
   createdBy: uuid("created_by").references(() => users.id),
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });

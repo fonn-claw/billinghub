@@ -17,6 +17,8 @@ import {
   Sun,
   Menu,
   X,
+  RefreshCw,
+  AlertTriangle,
 } from "lucide-react";
 import { Sheet, SheetContent } from "@/components/ui/sheet";
 import { logout } from "@/lib/auth/actions";
@@ -33,6 +35,8 @@ const allNavItems: NavItem[] = [
   { label: "Invoices", href: "/invoices", icon: <FileText size={20} strokeWidth={1.5} />, group: "main" },
   { label: "Payments", href: "/payments", icon: <DollarSign size={20} strokeWidth={1.5} />, group: "main" },
   { label: "Customers", href: "/customers", icon: <Users size={20} strokeWidth={1.5} />, group: "main" },
+  { label: "Recurring", href: "/recurring", icon: <RefreshCw size={20} strokeWidth={1.5} />, group: "main" },
+  { label: "Collections", href: "/collections", icon: <AlertTriangle size={20} strokeWidth={1.5} />, group: "main" },
   { label: "Reports", href: "/reports", icon: <BarChart3 size={20} strokeWidth={1.5} />, group: "reports" },
   { label: "Settings", href: "/settings", icon: <Settings size={20} strokeWidth={1.5} />, group: "settings" },
 ];
