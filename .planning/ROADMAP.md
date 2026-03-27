@@ -12,7 +12,7 @@ BillingHub delivers a unified marina invoicing platform in four phases: foundati
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation & Auth** - Database schema, authentication, layouts, design system, and seed data
+- [x] **Phase 1: Foundation & Auth** - Database schema, authentication, layouts, design system, and seed data
 - [ ] **Phase 2: Billing Engine** - Customer accounts, multi-revenue invoicing, payments, recurring templates, and collections
 - [ ] **Phase 3: Dashboard & Reports** - Revenue dashboard with charts and KPIs, reports module, CSV export
 - [ ] **Phase 4: Portal, PDFs & Polish** - Customer self-service portal, PDF invoice/statement generation, dark mode, animations, responsive polish
@@ -33,8 +33,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 Plans:
 - [x] 01-01-PLAN.md — Project setup, design tokens, Drizzle schema, iron-session auth with middleware
-- [ ] 01-02-PLAN.md — Application shell layouts (sidebar, top-bar, breadcrumbs) and styled login page
-- [ ] 01-03-PLAN.md — Comprehensive seed script (25 customers, 150+ invoices, aging distribution)
+- [x] 01-02-PLAN.md — Application shell layouts (sidebar, top-bar, breadcrumbs) and styled login page
+- [x] 01-03-PLAN.md — Comprehensive seed script (25 customers, 150+ invoices, aging distribution)
 
 ### Phase 2: Billing Engine
 **Goal**: Staff can manage customers, create multi-revenue invoices, record payments, set up recurring billing, and work collections
@@ -46,12 +46,14 @@ Plans:
   3. User can record full or partial payments against an invoice and see the invoice status auto-update (draft, sent, paid, partial, overdue)
   4. User can create recurring invoice templates and generate invoices from them
   5. User can flag overdue accounts for collections, add collection notes, and track payment reminder status
-**Plans**: TBD
+**Plans**: 5 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
-- [ ] 02-03: TBD
+- [ ] 02-01-PLAN.md — Schema amendments, shared utilities (aging, validation, invoice number), shadcn components, sidebar nav
+- [ ] 02-02-PLAN.md — Customer CRUD: list with search/filter, create dialog, profile with tabs, edit page, communication log
+- [ ] 02-03-PLAN.md — Invoice CRUD: create with dynamic line items, list with status tabs, detail page, draft editing
+- [ ] 02-04-PLAN.md — Payment recording with partial support and auto-status updates, recurring invoice templates with generation
+- [ ] 02-05-PLAN.md — Collections workflow: flag accounts, collection notes, promise-to-pay, reminder tracking
 
 ### Phase 3: Dashboard & Reports
 **Goal**: Manager can see a hero revenue dashboard with KPI cards, charts, and alerts, plus run and export reports
@@ -90,7 +92,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Auth | 1/3 | In progress | - |
-| 2. Billing Engine | 0/3 | Not started | - |
+| 1. Foundation & Auth | 3/3 | Complete | 2026-03-27 |
+| 2. Billing Engine | 0/5 | Not started | - |
 | 3. Dashboard & Reports | 0/2 | Not started | - |
 | 4. Portal, PDFs & Polish | 0/2 | Not started | - |
