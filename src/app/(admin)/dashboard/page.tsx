@@ -1,10 +1,32 @@
 import { getSession } from "@/lib/auth/session";
+import {
+  getDashboardKPIs,
+  getAgingData,
+  getRevenueByCategory,
+  getCollectionTrend,
+  getTopOverdueCustomers,
+  getSparklineData,
+} from "@/lib/dal/dashboard";
+import { KPICards } from "@/components/dashboard/kpi-cards";
+import { AgingChart } from "@/components/dashboard/aging-chart";
+import { RevenueDonut } from "@/components/dashboard/revenue-donut";
+import { TrendChart } from "@/components/dashboard/trend-chart";
+import { AlertsTable } from "@/components/dashboard/alerts-table";
 
 export default async function DashboardPage() {
   const session = await getSession();
   const name = session.name ?? "Harbor Master";
 
   const greeting = getGreeting();
+
+  const [kpis, aging, revenue, trend, overdue, sparklines] = await Promise.all([
+    getDashboardKPIs(),
+    getAgingData(),
+    getRevenueByCategory(),
+    getCollectionTrend(),
+    getTopOverdueCustomers(),
+    getSparklineData(),
+  ]);
 
   return (
     <div className="space-y-8">
@@ -31,12 +53,20 @@ export default async function DashboardPage() {
         </div>
       </div>
 
-      {/* Placeholder content */}
-      <div className="rounded-xl border border-border bg-card p-8 text-center">
-        <p className="text-muted-foreground">
-          Revenue dashboard with charts and metrics coming in Phase 3.
-        </p>
+      {/* KPI stat cards */}
+      <KPICards kpis={kpis} sparklines={sparklines} />
+
+      {/* Charts: aging + donut side by side */}
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <AgingChart data={aging} />
+        <RevenueDonut data={revenue} />
       </div>
+
+      {/* Collection trend - full width */}
+      <TrendChart data={trend} />
+
+      {/* Outstanding balance alerts - full width */}
+      <AlertsTable customers={overdue} />
     </div>
   );
 }
