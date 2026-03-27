@@ -35,7 +35,7 @@
 - [ ] **INV-06**: User can view invoice detail with line items, payment history, and status
 - [ ] **INV-07**: Invoice status auto-updates based on payments and due date (overdue after due date, paid when fully paid, partial when partially paid)
 - [ ] **INV-08**: User can edit draft invoices
-- [ ] **INV-09**: Invoices auto-categorize into aging buckets (current, 30-day, 60-day, 90+ day)
+- [x] **INV-09**: Invoices auto-categorize into aging buckets (current, 30-day, 60-day, 90+ day)
 
 ### Recurring Invoices
 
@@ -53,7 +53,7 @@
 
 ### Collections
 
-- [ ] **COLL-01**: Invoices auto-categorize into 30/60/90+ day aging buckets
+- [x] **COLL-01**: Invoices auto-categorize into 30/60/90+ day aging buckets
 - [ ] **COLL-02**: User can flag accounts for collections
 - [ ] **COLL-03**: User can add collection notes with timestamps
 - [ ] **COLL-04**: User can track payment reminder status (when last reminder was sent)
@@ -171,7 +171,7 @@
 | INV-06 | Phase 2 | Pending |
 | INV-07 | Phase 2 | Pending |
 | INV-08 | Phase 2 | Pending |
-| INV-09 | Phase 2 | Pending |
+| INV-09 | Phase 2 | Complete |
 | REC-01 | Phase 2 | Pending |
 | REC-02 | Phase 2 | Pending |
 | REC-03 | Phase 2 | Pending |
@@ -180,7 +180,7 @@
 | PAY-03 | Phase 2 | Pending |
 | PAY-04 | Phase 2 | Pending |
 | PAY-05 | Phase 2 | Pending |
-| COLL-01 | Phase 2 | Pending |
+| COLL-01 | Phase 2 | Complete |
 | COLL-02 | Phase 2 | Pending |
 | COLL-03 | Phase 2 | Pending |
 | COLL-04 | Phase 2 | Pending |
