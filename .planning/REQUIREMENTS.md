@@ -61,10 +61,10 @@
 
 ### Dashboard
 
-- [ ] **DASH-01**: Dashboard shows total revenue (current month and YTD)
-- [ ] **DASH-02**: Dashboard shows outstanding balance total
-- [ ] **DASH-03**: Dashboard shows collection rate percentage
-- [ ] **DASH-04**: Dashboard shows cash flow forecast (expected payments this month)
+- [x] **DASH-01**: Dashboard shows total revenue (current month and YTD)
+- [x] **DASH-02**: Dashboard shows outstanding balance total
+- [x] **DASH-03**: Dashboard shows collection rate percentage
+- [x] **DASH-04**: Dashboard shows cash flow forecast (expected payments this month)
 - [ ] **DASH-05**: Dashboard shows accounts receivable aging as horizontal bar chart (current/30/60/90+)
 - [ ] **DASH-06**: Dashboard shows revenue breakdown by category as donut chart
 - [ ] **DASH-07**: Dashboard shows collection rate trend over time as area chart
@@ -74,11 +74,11 @@
 
 ### Reports
 
-- [ ] **RPT-01**: Revenue by category report (slip, fuel, maintenance, amenity, service)
-- [ ] **RPT-02**: Aging report showing every overdue invoice with customer, amount, days overdue
-- [ ] **RPT-03**: Collections report (collected this month vs outstanding)
-- [ ] **RPT-04**: Monthly comparison report (current vs last month vs same month last year)
-- [ ] **RPT-05**: User can export any report to CSV
+- [x] **RPT-01**: Revenue by category report (slip, fuel, maintenance, amenity, service)
+- [x] **RPT-02**: Aging report showing every overdue invoice with customer, amount, days overdue
+- [x] **RPT-03**: Collections report (collected this month vs outstanding)
+- [x] **RPT-04**: Monthly comparison report (current vs last month vs same month last year)
+- [x] **RPT-05**: User can export any report to CSV
 
 ### PDF Generation
 
@@ -185,21 +185,21 @@
 | COLL-03 | Phase 2 | Complete |
 | COLL-04 | Phase 2 | Complete |
 | COLL-05 | Phase 2 | Complete |
-| DASH-01 | Phase 3 | Pending |
-| DASH-02 | Phase 3 | Pending |
-| DASH-03 | Phase 3 | Pending |
-| DASH-04 | Phase 3 | Pending |
+| DASH-01 | Phase 3 | Complete |
+| DASH-02 | Phase 3 | Complete |
+| DASH-03 | Phase 3 | Complete |
+| DASH-04 | Phase 3 | Complete |
 | DASH-05 | Phase 3 | Pending |
 | DASH-06 | Phase 3 | Pending |
 | DASH-07 | Phase 3 | Pending |
 | DASH-08 | Phase 3 | Pending |
 | DASH-09 | Phase 3 | Pending |
 | DASH-10 | Phase 3 | Pending |
-| RPT-01 | Phase 3 | Pending |
-| RPT-02 | Phase 3 | Pending |
-| RPT-03 | Phase 3 | Pending |
-| RPT-04 | Phase 3 | Pending |
-| RPT-05 | Phase 3 | Pending |
+| RPT-01 | Phase 3 | Complete |
+| RPT-02 | Phase 3 | Complete |
+| RPT-03 | Phase 3 | Complete |
+| RPT-04 | Phase 3 | Complete |
+| RPT-05 | Phase 3 | Complete |
 | PDF-01 | Phase 4 | Pending |
 | PDF-02 | Phase 4 | Pending |
 | PDF-03 | Phase 4 | Pending |
