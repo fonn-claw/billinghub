@@ -65,12 +65,12 @@
 - [x] **DASH-02**: Dashboard shows outstanding balance total
 - [x] **DASH-03**: Dashboard shows collection rate percentage
 - [x] **DASH-04**: Dashboard shows cash flow forecast (expected payments this month)
-- [ ] **DASH-05**: Dashboard shows accounts receivable aging as horizontal bar chart (current/30/60/90+)
-- [ ] **DASH-06**: Dashboard shows revenue breakdown by category as donut chart
-- [ ] **DASH-07**: Dashboard shows collection rate trend over time as area chart
-- [ ] **DASH-08**: Dashboard shows outstanding balance alerts (who owes most, most overdue)
-- [ ] **DASH-09**: Revenue numbers animate with counter roll-up on load
-- [ ] **DASH-10**: Dashboard header uses hero image with gradient overlay per DESIGN-SPEC.md
+- [x] **DASH-05**: Dashboard shows accounts receivable aging as horizontal bar chart (current/30/60/90+)
+- [x] **DASH-06**: Dashboard shows revenue breakdown by category as donut chart
+- [x] **DASH-07**: Dashboard shows collection rate trend over time as area chart
+- [x] **DASH-08**: Dashboard shows outstanding balance alerts (who owes most, most overdue)
+- [x] **DASH-09**: Revenue numbers animate with counter roll-up on load
+- [x] **DASH-10**: Dashboard header uses hero image with gradient overlay per DESIGN-SPEC.md
 
 ### Reports
 
@@ -189,12 +189,12 @@
 | DASH-02 | Phase 3 | Complete |
 | DASH-03 | Phase 3 | Complete |
 | DASH-04 | Phase 3 | Complete |
-| DASH-05 | Phase 3 | Pending |
-| DASH-06 | Phase 3 | Pending |
-| DASH-07 | Phase 3 | Pending |
-| DASH-08 | Phase 3 | Pending |
-| DASH-09 | Phase 3 | Pending |
-| DASH-10 | Phase 3 | Pending |
+| DASH-05 | Phase 3 | Complete |
+| DASH-06 | Phase 3 | Complete |
+| DASH-07 | Phase 3 | Complete |
+| DASH-08 | Phase 3 | Complete |
+| DASH-09 | Phase 3 | Complete |
+| DASH-10 | Phase 3 | Complete |
 | RPT-01 | Phase 3 | Complete |
 | RPT-02 | Phase 3 | Complete |
 | RPT-03 | Phase 3 | Complete |
