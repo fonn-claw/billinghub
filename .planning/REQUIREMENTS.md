@@ -83,7 +83,7 @@
 ### PDF Generation
 
 - [x] **PDF-01**: User can download invoice as PDF with marina branding per DESIGN-SPEC.md
-- [ ] **PDF-02**: User can generate monthly/quarterly account statement PDF per customer
+- [x] **PDF-02**: User can generate monthly/quarterly account statement PDF per customer
 - [x] **PDF-03**: PDF includes wave pattern footer decoration and proper styling
 
 ### Customer Portal
@@ -99,11 +99,11 @@
 - [x] **UI-01**: App follows DESIGN-SPEC.md color palette (Deep Navy, Ocean Teal, Harbor Gold)
 - [x] **UI-02**: Typography uses DM Serif Display for headings, Inter for body per type scale
 - [x] **UI-03**: Components styled per DESIGN-SPEC.md (cards, buttons, inputs, tables, badges, sidebar)
-- [ ] **UI-04**: Dark mode with proper color mapping per DESIGN-SPEC.md
-- [ ] **UI-05**: Page transitions with fade-in slide-up animation
-- [ ] **UI-06**: Micro-interactions on cards, buttons, sidebar items, table rows per spec
-- [ ] **UI-07**: Chart animations (counter roll-up, draw-in, bar growth) per spec
-- [ ] **UI-08**: Skeleton loading states matching content layout
+- [x] **UI-04**: Dark mode with proper color mapping per DESIGN-SPEC.md
+- [x] **UI-05**: Page transitions with fade-in slide-up animation
+- [x] **UI-06**: Micro-interactions on cards, buttons, sidebar items, table rows per spec
+- [x] **UI-07**: Chart animations (counter roll-up, draw-in, bar growth) per spec
+- [x] **UI-08**: Skeleton loading states matching content layout
 - [x] **UI-09**: Wave contour pattern used as signature background element
 - [x] **UI-10**: Pre-generated assets (logo, hero images, empty states) integrated
 - [x] **UI-11**: Responsive design (1400px+, 1200px, 768px, 640px breakpoints)
@@ -201,7 +201,7 @@
 | RPT-04 | Phase 3 | Complete |
 | RPT-05 | Phase 3 | Complete |
 | PDF-01 | Phase 4 | Complete |
-| PDF-02 | Phase 4 | Pending |
+| PDF-02 | Phase 4 | Complete |
 | PDF-03 | Phase 4 | Complete |
 | PORT-01 | Phase 4 | Complete |
 | PORT-02 | Phase 4 | Complete |
@@ -211,11 +211,11 @@
 | UI-01 | Phase 1 | Pending |
 | UI-02 | Phase 1 | Pending |
 | UI-03 | Phase 1 | Pending |
-| UI-04 | Phase 4 | Pending |
-| UI-05 | Phase 4 | Pending |
-| UI-06 | Phase 4 | Pending |
-| UI-07 | Phase 4 | Pending |
-| UI-08 | Phase 4 | Pending |
+| UI-04 | Phase 4 | Complete |
+| UI-05 | Phase 4 | Complete |
+| UI-06 | Phase 4 | Complete |
+| UI-07 | Phase 4 | Complete |
+| UI-08 | Phase 4 | Complete |
 | UI-09 | Phase 1 | Complete |
 | UI-10 | Phase 1 | Complete |
 | UI-11 | Phase 1 | Complete |

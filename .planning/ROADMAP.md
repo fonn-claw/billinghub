@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Foundation & Auth** - Database schema, authentication, layouts, design system, and seed data
 - [ ] **Phase 2: Billing Engine** - Customer accounts, multi-revenue invoicing, payments, recurring templates, and collections
 - [x] **Phase 3: Dashboard & Reports** - Revenue dashboard with charts and KPIs, reports module, CSV export (completed 2026-03-27)
-- [ ] **Phase 4: Portal, PDFs & Polish** - Customer self-service portal, PDF invoice/statement generation, dark mode, animations, responsive polish
+- [x] **Phase 4: Portal, PDFs & Polish** - Customer self-service portal, PDF invoice/statement generation, dark mode, animations, responsive polish (completed 2026-03-27)
 
 ## Phase Details
 
@@ -96,4 +96,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | 1. Foundation & Auth | 3/3 | Complete | 2026-03-27 |
 | 2. Billing Engine | 2/5 | In Progress|  |
 | 3. Dashboard & Reports | 3/3 | Complete   | 2026-03-27 |
-| 4. Portal, PDFs & Polish | 1/2 | In Progress|  |
+| 4. Portal, PDFs & Polish | 2/2 | Complete   | 2026-03-27 |
