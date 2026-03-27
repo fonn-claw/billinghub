@@ -8,8 +8,11 @@ import {
   getCustomerInvoices,
   getCustomerPayments,
 } from "@/lib/dal/customers";
+import { getCollectionNotes } from "@/lib/dal/collections";
 import { BalanceSummary } from "@/components/customers/balance-summary";
 import { CustomerNotes } from "@/components/customers/customer-notes";
+import { CollectionNotes } from "@/components/collections/collection-notes";
+import { CollectionsSection } from "@/components/collections/collections-section";
 import { InvoiceStatusBadge } from "@/components/invoices/status-badge";
 import { formatCurrency } from "@/lib/formatting";
 import { Button } from "@/components/ui/button";
@@ -38,12 +41,13 @@ export default async function CustomerProfilePage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  const [customer, balance, notes, invoices, payments] = await Promise.all([
+  const [customer, balance, notes, invoices, payments, collectionNotesList] = await Promise.all([
     getCustomer(id),
     getCustomerBalance(id),
     getCustomerNotes(id),
     getCustomerInvoices(id),
     getCustomerPayments(id),
+    getCollectionNotes(id),
   ]);
 
   if (!customer) {
@@ -186,6 +190,20 @@ export default async function CustomerProfilePage({
                 </CardContent>
               </Card>
             )}
+
+            {customer.isCollectionsFlagged && (
+              <Card className="md:col-span-2 border-red-200">
+                <CardHeader>
+                  <CardTitle className="text-red-600">Collections</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CollectionsSection
+                    customerId={id}
+                    lastReminderDate={customer.lastReminderDate}
+                  />
+                </CardContent>
+              </Card>
+            )}
           </div>
         </TabsContent>
 
@@ -323,6 +341,14 @@ export default async function CustomerProfilePage({
 
         <TabsContent value="notes" className="pt-4">
           <CustomerNotes notes={notes} customerId={id} />
+          {customer.isCollectionsFlagged && collectionNotesList.length > 0 && (
+            <div className="mt-8">
+              <h3 className="font-heading text-lg tracking-tight mb-4">
+                Collection Notes
+              </h3>
+              <CollectionNotes notes={collectionNotesList} customerId={id} />
+            </div>
+          )}
         </TabsContent>
       </Tabs>
     </div>
