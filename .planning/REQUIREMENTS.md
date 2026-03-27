@@ -18,12 +18,12 @@
 
 ### Customer Accounts
 
-- [ ] **CUST-01**: User can create customer with contact info, vessel details, and slip assignment
-- [ ] **CUST-02**: User can view list of all customers with search and filtering
-- [ ] **CUST-03**: User can view customer profile with balance summary (current, pending, overdue, credits)
-- [ ] **CUST-04**: User can edit customer information
-- [ ] **CUST-05**: User can add billing-related notes to customer communication log
-- [ ] **CUST-06**: Customer profile shows payment history and invoice history
+- [x] **CUST-01**: User can create customer with contact info, vessel details, and slip assignment
+- [x] **CUST-02**: User can view list of all customers with search and filtering
+- [x] **CUST-03**: User can view customer profile with balance summary (current, pending, overdue, credits)
+- [x] **CUST-04**: User can edit customer information
+- [x] **CUST-05**: User can add billing-related notes to customer communication log
+- [x] **CUST-06**: Customer profile shows payment history and invoice history
 
 ### Invoicing
 
@@ -157,12 +157,12 @@
 | AUTH-06 | Phase 1 | Complete |
 | AUTH-07 | Phase 1 | Pending |
 | AUTH-08 | Phase 1 | Pending |
-| CUST-01 | Phase 2 | Pending |
-| CUST-02 | Phase 2 | Pending |
-| CUST-03 | Phase 2 | Pending |
-| CUST-04 | Phase 2 | Pending |
-| CUST-05 | Phase 2 | Pending |
-| CUST-06 | Phase 2 | Pending |
+| CUST-01 | Phase 2 | Complete |
+| CUST-02 | Phase 2 | Complete |
+| CUST-03 | Phase 2 | Complete |
+| CUST-04 | Phase 2 | Complete |
+| CUST-05 | Phase 2 | Complete |
+| CUST-06 | Phase 2 | Complete |
 | INV-01 | Phase 2 | Complete |
 | INV-02 | Phase 2 | Complete |
 | INV-03 | Phase 2 | Complete |

@@ -49,6 +49,7 @@ Plan: 3 of 5
 | Phase 01 P02 | 4min | 2 tasks | 12 files |
 | Phase 01 P03 | 5min | 1 tasks | 2 files |
 | Phase 02 P01 | 3min | 2 tasks | 15 files |
+| Phase 02 P02 | 13min | 2 tasks | 10 files |
 | Phase 02 P03 | 11min | 2 tasks | 10 files |
 
 ## Accumulated Context
@@ -71,6 +72,8 @@ Recent decisions affecting current work:
 - [Phase 02]: collectionNotes now linked to customer (required) with optional invoice reference
 - [Phase 02]: Invoice status computed server-side via pure function from payments and due date
 - [Phase 02]: Complex form data serialized as JSON in FormData for useActionState compatibility
+- [Phase 02]: base-ui render prop used instead of asChild for polymorphic triggers (Dialog, DropdownMenu)
+- [Phase 02]: DAL pattern: src/lib/dal/<entity>.ts for data access with SQL aggregation
 
 ### Pending Todos
 
@@ -83,6 +86,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-27T00:54:14.166Z
-Stopped at: Completed 02-03-PLAN.md
+Last session: 2026-03-27T00:54:37Z
+Stopped at: Completed 02-02-PLAN.md
 Resume file: None
