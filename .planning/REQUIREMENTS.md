@@ -27,14 +27,14 @@
 
 ### Invoicing
 
-- [ ] **INV-01**: User can create invoice with multiple line items combining different revenue types (slip rental, fuel, maintenance, amenities, services)
-- [ ] **INV-02**: Each line item has category, description, quantity, rate, and auto-calculated amount
-- [ ] **INV-03**: Invoice calculates subtotal, tax, and total automatically
-- [ ] **INV-04**: User can save invoice as draft or mark as sent
-- [ ] **INV-05**: User can view list of all invoices with status filtering (draft, sent, paid, overdue, partial)
-- [ ] **INV-06**: User can view invoice detail with line items, payment history, and status
-- [ ] **INV-07**: Invoice status auto-updates based on payments and due date (overdue after due date, paid when fully paid, partial when partially paid)
-- [ ] **INV-08**: User can edit draft invoices
+- [x] **INV-01**: User can create invoice with multiple line items combining different revenue types (slip rental, fuel, maintenance, amenities, services)
+- [x] **INV-02**: Each line item has category, description, quantity, rate, and auto-calculated amount
+- [x] **INV-03**: Invoice calculates subtotal, tax, and total automatically
+- [x] **INV-04**: User can save invoice as draft or mark as sent
+- [x] **INV-05**: User can view list of all invoices with status filtering (draft, sent, paid, overdue, partial)
+- [x] **INV-06**: User can view invoice detail with line items, payment history, and status
+- [x] **INV-07**: Invoice status auto-updates based on payments and due date (overdue after due date, paid when fully paid, partial when partially paid)
+- [x] **INV-08**: User can edit draft invoices
 - [x] **INV-09**: Invoices auto-categorize into aging buckets (current, 30-day, 60-day, 90+ day)
 
 ### Recurring Invoices
@@ -163,14 +163,14 @@
 | CUST-04 | Phase 2 | Pending |
 | CUST-05 | Phase 2 | Pending |
 | CUST-06 | Phase 2 | Pending |
-| INV-01 | Phase 2 | Pending |
-| INV-02 | Phase 2 | Pending |
-| INV-03 | Phase 2 | Pending |
-| INV-04 | Phase 2 | Pending |
-| INV-05 | Phase 2 | Pending |
-| INV-06 | Phase 2 | Pending |
-| INV-07 | Phase 2 | Pending |
-| INV-08 | Phase 2 | Pending |
+| INV-01 | Phase 2 | Complete |
+| INV-02 | Phase 2 | Complete |
+| INV-03 | Phase 2 | Complete |
+| INV-04 | Phase 2 | Complete |
+| INV-05 | Phase 2 | Complete |
+| INV-06 | Phase 2 | Complete |
+| INV-07 | Phase 2 | Complete |
+| INV-08 | Phase 2 | Complete |
 | INV-09 | Phase 2 | Complete |
 | REC-01 | Phase 2 | Pending |
 | REC-02 | Phase 2 | Pending |
