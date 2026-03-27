@@ -111,13 +111,13 @@
 
 ### Demo Data
 
-- [ ] **SEED-01**: Seed script creates "Sunset Harbor Marina" with 25 customer accounts
-- [ ] **SEED-02**: Seed creates 150+ historical invoices going back 6 months with realistic distribution (60% paid on time, 20% paid late, 15% overdue, 5% in collections)
+- [x] **SEED-01**: Seed script creates "Sunset Harbor Marina" with 25 customer accounts
+- [x] **SEED-02**: Seed creates 150+ historical invoices going back 6 months with realistic distribution (60% paid on time, 20% paid late, 15% overdue, 5% in collections)
 - [x] **SEED-03**: Seed creates 3 demo login accounts (manager, billing clerk, customer)
-- [ ] **SEED-04**: Seed includes fuel charges, maintenance charges, amenity fees mixed across invoices
-- [ ] **SEED-05**: Seed creates 3 customers with payment plans (partial payments)
-- [ ] **SEED-06**: Seed creates recurring monthly invoices for 15 long-term slip holders
-- [ ] **SEED-07**: Seed uses relative dates so aging distribution remains realistic regardless of run date
+- [x] **SEED-04**: Seed includes fuel charges, maintenance charges, amenity fees mixed across invoices
+- [x] **SEED-05**: Seed creates 3 customers with payment plans (partial payments)
+- [x] **SEED-06**: Seed creates recurring monthly invoices for 15 long-term slip holders
+- [x] **SEED-07**: Seed uses relative dates so aging distribution remains realistic regardless of run date
 
 ## v2 Requirements
 
@@ -220,13 +220,13 @@
 | UI-10 | Phase 1 | Complete |
 | UI-11 | Phase 1 | Complete |
 | UI-12 | Phase 1 | Complete |
-| SEED-01 | Phase 1 | Pending |
-| SEED-02 | Phase 1 | Pending |
+| SEED-01 | Phase 1 | Complete |
+| SEED-02 | Phase 1 | Complete |
 | SEED-03 | Phase 1 | Pending |
-| SEED-04 | Phase 1 | Pending |
-| SEED-05 | Phase 1 | Pending |
-| SEED-06 | Phase 1 | Pending |
-| SEED-07 | Phase 1 | Pending |
+| SEED-04 | Phase 1 | Complete |
+| SEED-05 | Phase 1 | Complete |
+| SEED-06 | Phase 1 | Complete |
+| SEED-07 | Phase 1 | Complete |
 
 **Coverage:**
 - v1 requirements: 61 total
