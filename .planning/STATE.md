@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 02-04-PLAN.md
-last_updated: "2026-03-27T01:01:55.732Z"
+stopped_at: Completed 02-05-PLAN.md
+last_updated: "2026-03-27T01:08:43.669Z"
 progress:
   total_phases: 4
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 8
-  completed_plans: 7
+  completed_plans: 8
 ---
 
 # Project State
@@ -52,6 +52,7 @@ Plan: 4 of 5
 | Phase 02 P02 | 13min | 2 tasks | 10 files |
 | Phase 02 P03 | 11min | 2 tasks | 10 files |
 | Phase 02 P04 | 4min | 2 tasks | 13 files |
+| Phase 02 P05 | 4min | 2 tasks | 8 files |
 
 ## Accumulated Context
 
@@ -78,6 +79,8 @@ Recent decisions affecting current work:
 - [Phase 02]: computeInvoiceStatus return cast to enum type for Drizzle update compatibility
 - [Phase 02]: Recurring invoice generation uses fixed 8.5% tax rate and 30-day due date offset
 - [Phase 02]: Bulk generate iterates sequentially to avoid invoice number collisions
+- [Phase 02]: Collections flagging syncs invoice status to collections for all overdue invoices
+- [Phase 02]: Promise-to-pay notes show OVERDUE badge when promised date is past
 
 ### Pending Todos
 
@@ -90,6 +93,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-27T01:01:03Z
-Stopped at: Completed 02-04-PLAN.md
+Last session: 2026-03-27T01:08:43.667Z
+Stopped at: Completed 02-05-PLAN.md
 Resume file: None

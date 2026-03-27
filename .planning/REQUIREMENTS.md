@@ -54,10 +54,10 @@
 ### Collections
 
 - [x] **COLL-01**: Invoices auto-categorize into 30/60/90+ day aging buckets
-- [ ] **COLL-02**: User can flag accounts for collections
-- [ ] **COLL-03**: User can add collection notes with timestamps
-- [ ] **COLL-04**: User can track payment reminder status (when last reminder was sent)
-- [ ] **COLL-05**: User can record promises to pay
+- [x] **COLL-02**: User can flag accounts for collections
+- [x] **COLL-03**: User can add collection notes with timestamps
+- [x] **COLL-04**: User can track payment reminder status (when last reminder was sent)
+- [x] **COLL-05**: User can record promises to pay
 
 ### Dashboard
 
@@ -181,10 +181,10 @@
 | PAY-04 | Phase 2 | Complete |
 | PAY-05 | Phase 2 | Complete |
 | COLL-01 | Phase 2 | Complete |
-| COLL-02 | Phase 2 | Pending |
-| COLL-03 | Phase 2 | Pending |
-| COLL-04 | Phase 2 | Pending |
-| COLL-05 | Phase 2 | Pending |
+| COLL-02 | Phase 2 | Complete |
+| COLL-03 | Phase 2 | Complete |
+| COLL-04 | Phase 2 | Complete |
+| COLL-05 | Phase 2 | Complete |
 | DASH-01 | Phase 3 | Pending |
 | DASH-02 | Phase 3 | Pending |
 | DASH-03 | Phase 3 | Pending |
