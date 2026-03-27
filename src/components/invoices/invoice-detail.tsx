@@ -30,7 +30,8 @@ import {
   deleteInvoice,
   type ActionState,
 } from "@/app/(admin)/invoices/actions";
-import { Send, Pencil, Trash2, CreditCard } from "lucide-react";
+import { RecordPaymentDialog } from "@/components/payments/record-payment-dialog";
+import { Send, Pencil, Trash2 } from "lucide-react";
 import type { InvoiceDetail as InvoiceDetailType } from "@/lib/dal/invoices";
 
 const CATEGORY_LABELS: Record<string, string> = {
@@ -115,12 +116,13 @@ export function InvoiceDetailView({
               <DeleteInvoiceButton invoiceId={invoice.id} />
             </>
           )}
-          <Link href={`/invoices/${invoice.id}/payment`}>
-            <Button>
-              <CreditCard className="mr-2 h-4 w-4" />
-              Record Payment
-            </Button>
-          </Link>
+          {invoice.computedStatus !== "draft" && invoice.computedStatus !== "paid" && (
+            <RecordPaymentDialog
+              invoiceId={invoice.id}
+              invoiceNumber={invoice.invoiceNumber}
+              balanceCents={invoice.balanceCents}
+            />
+          )}
         </div>
       </div>
 
