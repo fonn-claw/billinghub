@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { getSession } from "@/lib/auth/session";
 import { getCustomerByUserId, getPortalSummary } from "@/lib/dal/portal";
-import { getCustomerInvoices } from "@/lib/dal/customers";
+import { getCustomerInvoices, getCustomerPayments } from "@/lib/dal/customers";
 import { formatCurrency } from "@/lib/formatting";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -18,6 +18,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { StatementGenerator } from "@/components/portal/statement-generator";
 
 function formatDate(dateStr: string) {
   return new Date(dateStr + "T00:00:00").toLocaleDateString("en-US", {
@@ -72,6 +73,7 @@ export default async function PortalHomePage() {
 
   const summary = await getPortalSummary(customer.id);
   const invoices = await getCustomerInvoices(customer.id);
+  const customerPayments = await getCustomerPayments(customer.id);
 
   return (
     <div className="space-y-6">
@@ -216,6 +218,14 @@ export default async function PortalHomePage() {
           </div>
         )}
       </div>
+
+      {/* Account Statement */}
+      <StatementGenerator
+        customerName={customer.name}
+        customerEmail={customer.email}
+        invoices={invoices}
+        payments={customerPayments}
+      />
     </div>
   );
 }
