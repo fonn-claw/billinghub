@@ -80,11 +80,11 @@ Plans:
   2. Invoice PDF downloads with marina branding, line item detail, and wave pattern footer decoration
   3. Account statement PDFs can be generated per customer for monthly or quarterly periods
   4. App supports dark mode with proper color mapping, page transitions with fade-in slide-up, skeleton loading states, and chart animations per DESIGN-SPEC.md
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 04-01: TBD
-- [ ] 04-02: TBD
+- [ ] 04-01-PLAN.md — Customer portal (account summary, invoice history, invoice detail) with invoice PDF download
+- [ ] 04-02-PLAN.md — Statement PDF generation, dark mode polish, page transitions, micro-interactions, skeleton loading states
 
 ## Progress
 
